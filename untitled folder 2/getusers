@@ -1,0 +1,206 @@
+{
+    "current_page": 1,
+    "data": [
+        {
+            "id": 14,
+            "name": "test user",
+            "email": "testuser3@email.com",
+            "photo": null,
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 13,
+            "name": "helllo world",
+            "email": "helloworld@email.com",
+            "photo": null,
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 12,
+            "name": "ppp ppp",
+            "email": "ppp@email.com",
+            "photo": null,
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 11,
+            "name": "hello123",
+            "email": "hello123@email.com",
+            "photo": null,
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 10,
+            "name": "abc abc",
+            "email": "abc@email.com",
+            "photo": null,
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 9,
+            "name": "abcdefg abcdefg",
+            "email": "abcdefg@email.com",
+            "photo": null,
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 8,
+            "name": "test user",
+            "email": "test@email2.com",
+            "photo": null,
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 7,
+            "name": "test user",
+            "email": "testuser@email.com",
+            "photo": null,
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 6,
+            "name": "Razib Sarker",
+            "email": "razib.razibsarker64@gmail.com",
+            "photo": "https://www.khaymatapi.mvp-apps.ae/storage/cdn/f7b6YxZPWZ4Nz8bOm9qf5thnM9Zxky5MLf1s9bk8.jpg",
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 5,
+            "name": "faisal",
+            "email": "faisal@mvp-apps.as",
+            "photo": null,
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 4,
+            "name": "faisal",
+            "email": "test@mvp-apps.as",
+            "photo": null,
+            "typeofuser": "U",
+            "email_verified_at": null,
+            "shop_id": null,
+            "permissions": null,
+            "permissionslist": []
+        },
+        {
+            "id": 3,
+            "name": "faisal",
+            "email": "abc@kmz.aesaasd",
+            "photo": null,
+            "typeofuser": "A",
+            "email_verified_at": null,
+            "shop_id": "5",
+            "permissions": "shop.update|product.add|product.update|product.delete",
+            "permissionslist": {
+                "shop": [
+                    "update"
+                ],
+                "product": [
+                    "add",
+                    "update",
+                    "delete"
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "name": "Mint Studio Boutique",
+            "email": "abc@kmz.aes",
+            "photo": null,
+            "typeofuser": "A",
+            "email_verified_at": null,
+            "shop_id": "1",
+            "permissions": "shop.update|product.add|product.update|product.delete",
+            "permissionslist": {
+                "shop": [
+                    "update"
+                ],
+                "product": [
+                    "add",
+                    "update",
+                    "delete"
+                ]
+            }
+        },
+        {
+            "id": 1,
+            "name": "admin",
+            "email": "noreply@kmz.ae",
+            "photo": "https://www.khaymatapi.mvp-apps.ae/storage/cdn/A8wB6tvVp4sNMMP6Va6VTKRIgvY8FnLoVx9Vm6KZ.png",
+            "typeofuser": "S",
+            "email_verified_at": "2021-07-11 18:25:54",
+            "shop_id": null,
+            "permissions": "subcategory.add|product.add|product.delete|product.update|category.add|category.update|category.delete|variation.add|variation.update|variation.delete",
+            "permissionslist": {
+                "subcategory": [
+                    "add"
+                ],
+                "product": [
+                    "add",
+                    "delete",
+                    "update"
+                ],
+                "category": [
+                    "add",
+                    "update",
+                    "delete"
+                ],
+                "variation": [
+                    "add",
+                    "update",
+                    "delete"
+                ]
+            }
+        }
+    ],
+    "first_page_url": "https://khaymatapi.mvp-apps.ae/api/v2/admin/users?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "https://khaymatapi.mvp-apps.ae/api/v2/admin/users?page=1",
+    "next_page_url": null,
+    "path": "https://khaymatapi.mvp-apps.ae/api/v2/admin/users",
+    "per_page": 15,
+    "prev_page_url": null,
+    "to": 14,
+    "total": 14
+}

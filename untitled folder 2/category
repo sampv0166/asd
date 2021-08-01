@@ -1,0 +1,55 @@
+Category
+Add Category
+Update Category
+Delete Category
+#Add Category
+TIP
+
+The following permission is needed 'category.add'
+
+POST /api/v2/admin/category
+Field	Type	Required
+name_ar	String	✅
+name_en	String	✅
+image	File	✅
+isactive	Tiny int[ 1/0 ]	*ADMIN
+Output
+{
+    "active": false,
+    "name_ar": "ABC",
+    "name_en": "CBA",
+    "created_at": "2021-07-01 18:11:18",
+    "id": 8,
+    "fullimageurl": "http://127.0.0.1:8000/storage/cdn/dxoU2rRvuky3Pvn4IyakNjT2ijIleNMMtezQzmJf.png"
+}
+#Update Category
+TIP
+
+The following permission is needed 'category.update'
+
+POST /api/v2/admin/category
+Field	Type	Required
+id	Uniq ID	✅
+name_ar	String	✅
+name_en	String	✅
+image	File	✅
+isactive	Tiny int[ 1/0 ]	*ADMIN
+Output
+
+{
+    "active": false,
+    "name_ar": "ABC",
+    "name_en": "CBA",
+    "created_at": "2021-07-01 18:11:18",
+    "id": 8,
+    "fullimageurl": "http://127.0.0.1:8000/storage/cdn/dxoU2rRvuky3Pvn4IyakNjT2ijIleNMMtezQzmJf.png"
+}
+#Delete Category
+TIP
+
+The following permission is needed 'category.delete'
+
+DELETE /api/v2/admin/category/{id}
+Field	Type	Required
+id	Uniq ID	✅
+← Variation

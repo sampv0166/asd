@@ -1,0 +1,81 @@
+Permissions
+Add Permission
+Update Permissions
+ALl Permissions
+
+#Add Permission
+POST /api/v2/admin/addpermission
+
+Field	Type	Required
+user_id	Uniq ID	✅
+add_permission[]	List[Permissions]	✅
+Output
+
+#Update Permissions
+POST /api/v2/admin/login
+Field	Type	Required
+
+user_id	Uniq ID	✅
+permissions[]	List[Permissions]	✅
+
+
+Output
+{
+    "id": 1,
+    "name": "admin",
+    "email": "noreply@kmz.ae",
+    "photo": "http://127.0.0.1:8000/storage/cdn/QRydCFxFTR9gXZAxmw91MK1gXP6fr5fKXgBULrGn.jpg",
+    "typeofuser": "S",
+    "email_verified_at": "2021-06-30 13:14:55",
+    "shop_id": null,
+    "permissions": "permission.add|permission.update|product.add|product.update",
+    "permissionslist": {
+        "permission": [
+            "add",
+            "update"
+        ],
+        "product": [
+            "add",
+            "update"
+        ]
+    }
+}
+
+
+
+#ALl Permissions
+GET /api/v2/admin/allpermissions
+Output
+{
+    "permission": [
+        "update"
+    ],
+    "product": [
+        "add",
+        "update",
+        "delete"
+    ],
+    "category": [
+        "add",
+        "update",
+        "delete"
+    ],
+    "shop": [
+        "add",
+        "update",
+        "delete"
+    ],
+    "general": [
+        "add",
+        "update",
+        "delete"
+    ],
+    "coupon": [
+        "add",
+        "update",
+        "delete"
+    ],
+    "order": [
+        "update"
+    ]
+}

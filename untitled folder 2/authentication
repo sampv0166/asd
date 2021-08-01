@@ -1,0 +1,85 @@
+Authentication
+Registration
+Login
+Apple Auth
+Google Auth
+Current USER info
+
+
+#Registration
+POST /api/v2/public/register
+Field	Type	Required
+name	Min. 1	✅
+email	Email	✅
+password	Min. 6	✅
+photo	String | URL	
+Output
+
+#Login
+POST /api/v2/public/login
+Field	Type	Required
+email	Email	✅
+password	Min. 6	✅
+
+
+#Apple Auth
+GET /api/v2/public/login/applewithtoken
+Field	Type	Required
+token	Apple Auth Token	✅
+Output
+{
+    "id": 13,
+    "name": "faisal Kc",
+    "email": "faisalkc4u@gmail.com",
+    "photo": "https://lh3.googleusercontent.com/a-/AOh14Gif09_4u6OKyMyNf0dCfQiQ2JNlW8iSlQTw_oVVwQ=s96-c",
+    "typeofuser": "U",
+    "email_verified_at": null,
+    "shop_id": null,
+    "permissions": null,
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTBkNTJhZjIyYjg3NTViMzIyYmY5ZWQ0MGZkYzZkNTVjODc0NDBlZmRjNjU4N2Y0YTIwNDQzOTQ5YjMwNDc3ZWVhZTg4NWEzMGY1Njk2N2YiLCJpYXQiOjE2MjUxNDQxNDMsIm5iZiI6MTYyNTE0NDE0MywiZXhwIjoxNjU2NjgwMTQzLCJzdWIiOiIxMyIsInNjb3BlcyI6W119.hqSmcpiL5kFEnG-JA_C71sfwJWaay91FDTUFrpM0rB0vZBW2mAqe0tJk1HQ6B7gKdEuHRFa60tCjhc5XWPyWFD5IuI2Pfclr3SodS4XKAiT2tU4Vd1Z0RUvGTLpj7qX--nmsqQzT3bCbkAGW6pA6mShQTVcTOfbzCSlmNZyKYhGyPaNXCW2jBD34Bo2PDrH3NIS9Gd55tuSQ_ROXyYvWTSLW-KgF2IpNrj3Tv7xeTWcnZ0daQt4Twf6jMmO6DiB63bPXTDWZvhVqy8fq8Cp3zyEiqYQEo1p-mvhmXihbBJwYOJLe9FhGhF2XXBn7s1k2mA6LXmpZjqqGYRihxWbdmJOXxLlUOf1VPfF0OyP6KtedUKDIMNFEsmGjpJFPy8dW0g0YpHpBSSBPe864wESsRAcpIBAps2nGK7zIvmg17kWq5z81IKJiyEVpeBgWW_Bi4XILvqDZA9tMj1Owt0E-Q1VerzUFEojidda7auAqzjJYoY8ZNsw6nOpeBpCXy_zHiqBzsvGEx5-kN6b-ZaNOJ2WqWpUiPlBxwkJBhBx2WY82d9xj5pqlFJSJ4u4350yOX0HwOZu84xdn8xWiUmRcJjRLhtrQ-ujcAqSqKMScQ9AU5fsWpl71k6WuU57f7boACcU7_BRE6yeQnu_bdLetmhXTLxoJwuiwvx55aX1hQAI",
+    "permissionslist": []
+}
+#Google Auth
+GET /api/v2/public/login/applewithtoken
+Field	Type	Required
+token	Google Auth Token	✅
+Output
+{
+    "id": 13,
+    "name": "faisal Kc",
+    "email": "faisalkc4u@gmail.com",
+    "photo": "https://lh3.googleusercontent.com/a-/AOh14Gif09_4u6OKyMyNf0dCfQiQ2JNlW8iSlQTw_oVVwQ=s96-c",
+    "typeofuser": "U",
+    "email_verified_at": null,
+    "shop_id": null,
+    "permissions": null,
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTBkNTJhZjIyYjg3NTViMzIyYmY5ZWQ0MGZkYzZkNTVjODc0NDBlZmRjNjU4N2Y0YTIwNDQzOTQ5YjMwNDc3ZWVhZTg4NWEzMGY1Njk2N2YiLCJpYXQiOjE2MjUxNDQxNDMsIm5iZiI6MTYyNTE0NDE0MywiZXhwIjoxNjU2NjgwMTQzLCJzdWIiOiIxMyIsInNjb3BlcyI6W119.hqSmcpiL5kFEnG-JA_C71sfwJWaay91FDTUFrpM0rB0vZBW2mAqe0tJk1HQ6B7gKdEuHRFa60tCjhc5XWPyWFD5IuI2Pfclr3SodS4XKAiT2tU4Vd1Z0RUvGTLpj7qX--nmsqQzT3bCbkAGW6pA6mShQTVcTOfbzCSlmNZyKYhGyPaNXCW2jBD34Bo2PDrH3NIS9Gd55tuSQ_ROXyYvWTSLW-KgF2IpNrj3Tv7xeTWcnZ0daQt4Twf6jMmO6DiB63bPXTDWZvhVqy8fq8Cp3zyEiqYQEo1p-mvhmXihbBJwYOJLe9FhGhF2XXBn7s1k2mA6LXmpZjqqGYRihxWbdmJOXxLlUOf1VPfF0OyP6KtedUKDIMNFEsmGjpJFPy8dW0g0YpHpBSSBPe864wESsRAcpIBAps2nGK7zIvmg17kWq5z81IKJiyEVpeBgWW_Bi4XILvqDZA9tMj1Owt0E-Q1VerzUFEojidda7auAqzjJYoY8ZNsw6nOpeBpCXy_zHiqBzsvGEx5-kN6b-ZaNOJ2WqWpUiPlBxwkJBhBx2WY82d9xj5pqlFJSJ4u4350yOX0HwOZu84xdn8xWiUmRcJjRLhtrQ-ujcAqSqKMScQ9AU5fsWpl71k6WuU57f7boACcU7_BRE6yeQnu_bdLetmhXTLxoJwuiwvx55aX1hQAI",
+    "permissionslist": []
+}
+#Current USER info
+GET /api/v2/public/myprofile
+Brarer token is required
+
+Output
+{
+    "id": 1,
+    "name": "admin",
+    "email": "noreply@kmz.ae",
+    "photo": "http://127.0.0.1:8000/storage/cdn/QRydCFxFTR9gXZAxmw91MK1gXP6fr5fKXgBULrGn.jpg",
+    "typeofuser": "S",
+    "email_verified_at": "2021-06-30 13:14:55",
+    "shop_id": null,
+    "permissions": "permission.add|permission.update",
+    "permissionslist": {
+        "permission": [
+            "add",
+            "update"
+        ]
+    }
+}
+
+
+
+
+
+
